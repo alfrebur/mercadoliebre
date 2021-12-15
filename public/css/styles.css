@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+@import url("normalize.css");
+
+body {
+  font-family: "Roboto";
+  background-color: lightgray;
+}
+
+.main-header {
+  background-color: #eac926;
+}
+
+main {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.texto-header {
+  font-weight: normal;
+  text-align: center;
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+.top-bar {
+  padding-top: 10px;
+}
+
+.logo {
+  margin-left: 20px;
+}
+
+.burger-menu {
+  color: white;
+  background-color: #1259c3;
+  margin: auto;
+  border-radius: 5px;
+  max-width: 40px;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 20px;
+}
+
+.banner {
+  display: block;
+  margin: auto;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.nav-bar {
+  display: none;
+}
+
+.nav-bar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar li {
+  margin: 0 5px;
+}
+
+.subtitulo {
+  margin-left: 10px;
+}
+
+.products-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightgray;
+  color: black;
+  font-size: 20px;
+  width: 100vw;
+}
+
+article {
+  background-color: white;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+article img {
+  display: block;
+  margin: auto;
+  width: 70vw;
+}
+
+.truck {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border: solid #39b54a 1px;
+  border-radius: 50%;
+  color: #39b54a;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: 20px;
+  padding: 1%;
+}
+
+.boxdata {
+  border-top: solid 1px #ebebeb;
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.price {
+  font-size: 18px;
+}
+
+.discount {
+  font-size: 16px;
+  margin-left: 10px;
+  color: #39b54a;
+}
+
+.description {
+  display: none;
+  font-weight: bold;
+}
+
+footer {
+  display: block;
+  margin: auto;
+  background-color: #fff;
+  max-width: 100vw;
+}
+
+footer h4 {
+  text-align: center;
+}
+
+footer p {
+  text-align: center;
+}
+
+.icon {
+  color: #1259c3;
+  margin-bottom: 10px;
+  font-size: 2em;
+  text-align: center;
+}
+
+@media (min-width: 361px) {
+  .description {
+    display: none;
+  }
+  article {
+    background-color: white;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 90vw;
+  }
+  .truck {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .texto-header {
+    max-width: 350px;
+    text-align: right;
+  }
+  .burger-menu {
+    display: none;
+  }
+  article {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    width: 46vw;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .description {
+    display: block;
+    margin-left: 15px;
+    background-color: white;
+    padding-bottom: 0px;
+    margin-top: 0px;
+  }
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .nav-bar ul {
+    display: flex;
+  }
+  .nav-bar li {
+    margin-right: 10px;
+  }
+  .prod {
+    width: 100vw;
+    margin: auto;
+  }
+  .products-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .subtitulo {
+    font-size: 20px;
+    margin-left: 15px;
+  }
+  article img {
+    width: 40vw;
+  }
+}
+
+@media (min-width: 980px) {
+  .top-bar,
+  .nav-bar {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .nav-bar li {
+    margin-right: 0 10px;
+  }
+  .top-bar {
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  .texto-header {
+    margin-right: 10px;
+    max-width: none;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  img.logo {
+    width: 250px;
+  }
+
+  article{
+    width: 22vw;
+  }
+
+  article img{
+    width: 22vw;
+  }
+
+  .description{
+    margin-left: 15px;
+    margin-top: 0px;
+    font-size: 18px;
+  }
+
+  .footerbox{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .footertext{
+    width: 30vw;
+  }
+}
